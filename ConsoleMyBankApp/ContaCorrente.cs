@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleMyBankApp
 {
-    class ContaCorrente
+    //A linha abaixo diz que a classe 'ContaCorrente' é filha da classe 'Conta' ee erda seus métodos e atributos.
+    public class ContaCorrente : Conta
     {
-        public Cliente titular;
-        public int agencia;
-        public int conta;
-
-        private double saldo = 100.00;
+        //MÉTODO CONSTRUTOR:
+        public ContaCorrente(Cliente titular, int agencia, int conta)
+        {
+            this.setTitular(titular);
+            this.setAgencia(agencia);
+            this.setConta(conta);
+        }
+        
     }
 }

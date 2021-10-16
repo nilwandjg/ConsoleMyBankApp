@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleMyBankApp
 {
-    class Cliente
+    public class Cliente
     {
         public string nome;
         public string cpf;
         public string profissao;
 
+        //MÉTODO CONSTRUTOR:
         public Cliente(string nome, string cpf, string profissao)
         {
             this.setNome(nome);
@@ -19,7 +20,8 @@ namespace ConsoleMyBankApp
             this.setProfissao(profissao);
         }
 
-        public string getNome(){return this.nome;}
+        //GETTER E SETTERS DA CLASSE "Cliente":
+        public virtual string getNome(){return this.nome;}
         public void setNome(string nome) { this.nome = nome; }
 
         public string getCPF() { return this.cpf; }
